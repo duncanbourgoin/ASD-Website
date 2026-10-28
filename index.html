@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Solar Development LLC | Commercial & Distributed Generation Infrastructure</title>
+    <meta name="description" content="American Solar Development LLC originates, structures, and develops commercial & industrial (C&I) solar and distributed generation energy infrastructure across the United States.">
+    
+    <!-- Favicon (Uses your icon-only mark if uploaded, with SVG fallback) -->
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+
+    <!-- Google Fonts: Plus Jakarta Sans (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#11263c',      /* Primary Deep Navy from Logo */
+                            slate: '#2c4c6e',     /* Secondary Steel Blue from Logo */
+                            gold: '#d49a35',      /* Ochre Gold from Logo */
+                            amber: '#f39c2b',     /* Inner Sun Amber from Logo */
+                            orange: '#e06324',    /* Outer Sun Terracotta from Logo */
+                            dark: '#0b1928'       /* Deep Institutional Footer Navy */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Subtle architectural grid background for institutional texture */
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .bg-grid-light {
+            background-image: linear-gradient(to right, rgba(17, 38, 60, 0.04) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(17, 38, 60, 0.04) 1px, transparent 1px);
+            background-size: 48px 48px;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-brand-orange selection:text-white">
+
+    <!-- Top Institutional Bar -->
+    <div class="bg-brand-dark text-slate-400 text-xs py-2.5 px-6 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-2">
+                <span class="inline-block w-2 h-2 rounded-full bg-brand-amber"></span>
+                <span class="tracking-wide uppercase font-medium text-slate-300">Distributed Generation &amp; C&amp;I Solar Infrastructure</span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="mailto:contact@americansolardevelopment.com" class="hover:text-white transition-colors">contact@americansolardevelopment.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            
+            <!-- Brand Logo (Loads logo-light.jpg if present, otherwise renders exact inline SVG replica) -->
+            <a href="#" class="flex items-center group focus:outline-none">
+                <img src="logo-light.jpg" alt="American Solar Development LLC" class="h-14 w-auto object-contain hidden" onload="this.classList.remove('hidden'); document.getElementById('svg-logo-header').classList.add('hidden');" onerror="this.classList.add('hidden');">
+                
+                <!-- Built-in Vector Replica of Your Exact Logo -->
+                <div id="svg-logo-header" class="flex items-center gap-3.5">
+                    <svg viewBox="0 0 130 92" class="h-12 w-auto flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Sun Upper Left -->
+                        <path d="M 22 67 A 34 34 0 0 1 83 41 L 22 67 Z" fill="#e06324"/>
+                        <path d="M 34 62 A 20 20 0 0 1 69 47 L 34 62 Z" fill="#f39c2b"/>
+                        <!-- Left Wedge -->
+                        <polygon points="10,88 26,70 67,52 43,88" fill="#e06324"/>
+                        <polygon points="26,70 67,52 52,74 35,76" fill="#f39c2b"/>
+                        <!-- Middle Wedge -->
+                        <polygon points="48,88 73,50 96,40 77,88" fill="#d49a35"/>
+                        <polygon points="48,88 60,70 86,65 77,88" fill="#c77228"/>
+                        <!-- Right Top Wedge -->
+                        <polygon points="94,55 101,37 124,27 124,44" fill="#29486b"/>
+                        <!-- Right Bottom Wedge -->
+                        <polygon points="82,88 92,60 124,49 124,88" fill="#11263c"/>
+                    </svg>
+                    <div class="flex flex-col justify-center leading-none">
+                        <span class="font-display font-extrabold text-xl tracking-tight text-brand-navy">AMERICAN</span>
+                        <span class="font-display font-extrabold text-xl tracking-tight text-brand-navy -mt-0.5">SOLAR</span>
+                        <span class="font-display font-bold text-[10.5px] tracking-[0.14em] text-brand-navy mt-1">DEVELOPMENT LLC</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#mandate" class="hover:text-brand-navy transition-colors">Mandate</a>
+                <a href="#capabilities" class="hover:text-brand-navy transition-colors">Capabilities</a>
+                <a href="#criteria" class="hover:text-brand-navy transition-colors">Site Criteria</a>
+                <a href="#contact" class="px-5 py-2.5 bg-brand-navy text-white rounded font-medium hover:bg-brand-slate transition-colors shadow-sm">
+                    Partner With Us
+                </a>
+            </nav>
+
+            <!-- Mobile CTA -->
+            <div class="md:hidden">
+                <a href="mailto:contact@americansolardevelopment.com" class="px-4 py-2 bg-brand-navy text-white text-xs font-semibold uppercase tracking-wider rounded">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-brand-navy text-white overflow-hidden border-b-4 border-brand-gold">
+        <div class="absolute inset-0 bg-grid-pattern opacity-100"></div>
+        <!-- Subtle warm ambient glow echoing the solar mark -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-orange/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-1/3 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 py-24 md:py-32 lg:py-36">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded bg-white/10 border border-white/15 text-brand-gold text-xs font-semibold uppercase tracking-widest mb-6">
+                    <span>Energy Infrastructure &bull; Project Origination &bull; Capital Structuring</span>
+                </div>
+                <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.12] text-white mb-6">
+                    Institutional Solar Development for Commercial Real Estate &amp; Industry.
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 font-light leading-relaxed mb-10 max-w-2xl">
+                    American Solar Development LLC originates, engineers, and structures behind-the-meter and front-of-the-meter solar assets. We partner with industrial property owners, REITs, and utilities to turn underutilized rooftops and land into long-term power and revenue infrastructure.
+                </p>
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                    <a href="#contact" class="inline-flex justify-center items-center px-7 py-4 bg-brand-orange hover:bg-amber-600 text-white font-semibold text-sm rounded transition-all shadow-lg shadow-brand-orange/20">
+                        Submit a Property or Inquiry
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                    <a href="#capabilities" class="inline-flex justify-center items-center px-7 py-4 bg-white/5 hover:bg-white/10 text-white border border-white/20 font-medium text-sm rounded transition-all">
+                        Explore Development Lifecycle
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics / Institutional Positioning Bar -->
+    <section id="mandate" class="bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 divide-y md:divide-y-0 md:divide-x divide-slate-200">
+                <div class="pt-4 md:pt-0 md:px-6 first:pl-0">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-brand-orange mb-1">Asset Class Focus</p>
+                    <p class="font-display text-2xl font-bold text-brand-navy">C&amp;I &amp; Community</p>
+                    <p class="text-sm text-slate-600 mt-1">Industrial rooftops, logistics centers, and distributed generation sites.</p>
+                </div>
+                <div class="pt-4 md:pt-0 md:px-6">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-brand-orange mb-1">Target Project Scale</p>
+                    <p class="font-display text-2xl font-bold text-brand-navy">250 kW – 5 MW+</p>
+                    <p class="text-sm text-slate-600 mt-1">Single-site commercial arrays and multi-facility real estate portfolios.</p>
+                </div>
+                <div class="pt-4 md:pt-0 md:px-6">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-brand-orange mb-1">Execution Scope</p>
+                    <p class="font-display text-2xl font-bold text-brand-navy">Origination to NTP</p>
+                    <p class="text-sm text-slate-600 mt-1">Site control, utility interconnection, permitting, and REC contracting.</p>
+                </div>
+                <div class="pt-4 md:pt-0 md:px-6">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-brand-orange mb-1">Commercial Structures</p>
+                    <p class="font-display text-2xl font-bold text-brand-navy">Flexible Capital</p>
+                    <p class="text-sm text-slate-600 mt-1">Roof/ground leases, behind-the-meter PPAs, and turnkey joint ventures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Capabilities Section -->
+    <section id="capabilities" class="py-24 bg-white bg-grid-light">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-orange mb-3">Core Capabilities</h2>
+                <p class="font-display text-3xl sm:text-4xl font-bold text-brand-navy tracking-tight">
+                    Disciplined Project Execution Across the Development Lifecycle
+                </p>
+                <p class="mt-4 text-slate-600 text-lg leading-relaxed">
+                    We bridge the gap between commercial real estate ownership, utility grid engineering, and institutional energy finance—de-risking solar assets from initial feasibility through construction readiness.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="w-full h-1 bg-brand-orange absolute top-0 left-0"></div>
+                    <div class="w-12 h-12 rounded bg-brand-navy/5 flex items-center justify-center text-brand-navy mb-6">
+                        <svg class="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-brand-navy mb-3">1. Site Origination &amp; Control</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Data-driven identification of high-yield commercial rooftops and proximate greenfield parcels inside advantaged utility territories.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold mr-2"></span>Solar irradiance &amp; structural roof modeling</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold mr-2"></span>Long-term roof &amp; ground lease structuring</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold mr-2"></span>Title review, ALTA surveys &amp; site diligence</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="w-full h-1 bg-brand-gold absolute top-0 left-0"></div>
+                    <div class="w-12 h-12 rounded bg-brand-navy/5 flex items-center justify-center text-brand-navy mb-6">
+                        <svg class="w-6 h-6 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-brand-navy mb-3">2. Interconnection &amp; Engineering</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Comprehensive management of utility queue applications, hosting capacity analysis, and municipal permitting to secure Notice to Proceed (NTP).
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold mr-2"></span>Feeder hosting capacity &amp; transformer analysis</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold mr-2"></span>Utility interconnection agreements (ISA)</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold mr-2"></span>AHJ zoning, structural PE stamps &amp; environmental</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="w-full h-1 bg-brand-navy absolute top-0 left-0"></div>
+                    <div class="w-12 h-12 rounded bg-brand-navy/5 flex items-center justify-center text-brand-navy mb-6">
+                        <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-brand-navy mb-3">3. Offtake, Incentives &amp; Finance</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Optimization of state renewable energy credit (REC) contracts, federal tax credit monetization, and commercial power purchase agreements.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold mr-2"></span>State REC program bidding &amp; compliance (e.g., Illinois Shines)</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold mr-2"></span>Federal ITC &amp; energy community bonus optimization</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold mr-2"></span>BTM Power Purchase Agreements &amp; EPC coordination</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Criteria / Landowners & C&I Partners -->
+    <section id="criteria" class="py-20 bg-slate-900 text-white border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-3">Partnership Criteria</h2>
+                    <h3 class="font-display text-3xl font-bold text-white tracking-tight mb-4">
+                        What We Look For in Real Estate &amp; Industrial Partners
+                    </h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        Whether you own a single manufacturing facility or manage a multi-state logistics portfolio, American Solar Development provides transparent, institutional execution with zero upfront capital required from the property owner.
+                    </p>
+                    <div class="p-5 rounded bg-white/5 border border-white/10">
+                        <p class="text-xs uppercase tracking-wider text-brand-gold font-semibold mb-2">Value to Property Owners</p>
+                        <p class="text-sm text-slate-300">
+                            Generate predictable 20-to-25-year passive roof lease income or lock in below-market fixed electricity rates while hedging against utility capacity charges.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-brand-navy/80 border border-slate-700/80 p-6 rounded-lg">
+                        <span class="text-xs font-mono uppercase text-brand-orange font-semibold">01 / Industrial &amp; Logistics Rooftops</span>
+                        <h4 class="font-display text-lg font-bold text-white mt-2 mb-2">40,000+ Sq. Ft. Unobstructed</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Flat or low-slope commercial roofs (TPO, EPDM, PVC, or standing seam metal) in strong structural condition or scheduled for near-term re-roofing.
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-navy/80 border border-slate-700/80 p-6 rounded-lg">
+                        <span class="text-xs font-mono uppercase text-brand-orange font-semibold">02 / Behind-The-Meter Load</span>
+                        <h4 class="font-display text-lg font-bold text-white mt-2 mb-2">High Daytime Power Demand</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Manufacturing, cold storage, distribution, and commercial facilities seeking direct on-site generation to offset utility kWh and demand charges.
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-navy/80 border border-slate-700/80 p-6 rounded-lg">
+                        <span class="text-xs font-mono uppercase text-brand-orange font-semibold">03 / Community Solar Land</span>
+                        <h4 class="font-display text-lg font-bold text-white mt-2 mb-2">10 to 40+ Contiguous Acres</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Cleared, flat parcels located within 1 mile of three-phase utility distribution lines and substations with available feeder hosting capacity.
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-navy/80 border border-slate-700/80 p-6 rounded-lg">
+                        <span class="text-xs font-mono uppercase text-brand-orange font-semibold">04 / Co-Development &amp; Acquisitions</span>
+                        <h4 class="font-display text-lg font-bold text-white mt-2 mb-2">Early-to-Mid Stage Pipelines</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            We partner with local originators, EPCs, and real estate brokers to co-develop or acquire commercial solar projects from site control through NTP.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Direct Contact / Origination Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-8 sm:p-12 shadow-sm">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+                    <div class="md:col-span-7">
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-orange">Origination &amp; Inquiries</span>
+                        <h2 class="font-display text-2xl sm:text-3xl font-bold text-brand-navy mt-2 mb-4">
+                            Initiate a Site Evaluation or Partnership Discussion
+                        </h2>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            To request a preliminary feasibility assessment, hosting capacity screen, or lease/PPA proposal for a commercial property, please reach out directly to our development team with the property address or parcel coordinates.
+                        </p>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex items-center text-brand-navy font-medium">
+                                <svg class="w-5 h-5 text-brand-orange mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                <a href="mailto:contact@americansolardevelopment.com" class="hover:text-brand-orange underline underline-offset-4 transition-colors">
+                                    contact@americansolardevelopment.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-5 flex flex-col justify-center bg-white p-6 rounded-lg border border-slate-200">
+                        <p class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Direct Dispatch</p>
+                        <p class="text-xs text-slate-600 mb-5 leading-relaxed">
+                            Click below to launch a pre-formatted project inquiry email directly to our origination desk:
+                        </p>
+                        <a href="mailto:contact@americansolardevelopment.com?subject=Project%20Inquiry%20%7C%20American%20Solar%20Development%20LLC&body=Property%20Address%20%2F%20Location%3A%0D%0AApproximate%20Roof%20Sq.%20Ft.%20or%20Acreage%3A%0D%0AElectric%20Utility%20Provider%3A%0D%0AContact%20Name%20%26%20Phone%3A%0D%0A" 
+                           class="w-full py-3.5 px-5 bg-brand-navy hover:bg-brand-slate text-white text-center text-sm font-semibold rounded transition-colors shadow-sm">
+                            Email Origination Desk
+                        </a>
+                        <p class="text-[11px] text-slate-400 text-center mt-3">
+                            Typical initial feasibility turnaround: 48–72 hours
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Institutional Footer (Uses dark-background logo variant) -->
+    <footer class="bg-brand-dark text-slate-400 py-14 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            
+            <!-- Dark Mode Brand Logo -->
+            <div>
+                <img src="logo-dark.jpg" alt="American Solar Development LLC" class="h-14 w-auto object-contain hidden" onload="this.classList.remove('hidden'); document.getElementById('svg-logo-footer').classList.add('hidden');" onerror="this.classList.add('hidden');">
+                
+                <!-- Built-in Dark Mode Vector Replica -->
+                <div id="svg-logo-footer" class="flex items-center gap-3.5">
+                    <svg viewBox="0 0 130 92" class="h-11 w-auto flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 22 67 A 34 34 0 0 1 83 41 L 22 67 Z" fill="#e06324"/>
+                        <path d="M 34 62 A 20 20 0 0 1 69 47 L 34 62 Z" fill="#f39c2b"/>
+                        <polygon points="10,88 26,70 67,52 43,88" fill="#e06324"/>
+                        <polygon points="26,70 67,52 52,74 35,76" fill="#f39c2b"/>
+                        <polygon points="48,88 73,50 96,40 77,88" fill="#d49a35"/>
+                        <polygon points="48,88 60,70 86,65 77,88" fill="#c77228"/>
+                        <polygon points="94,55 101,37 124,27 124,44" fill="#7c9ab8"/>
+                        <polygon points="82,88 92,60 124,49 124,88" fill="#ffffff"/>
+                    </svg>
+                    <div class="flex flex-col justify-center leading-none">
+                        <span class="font-display font-extrabold text-lg tracking-tight text-white">AMERICAN</span>
+                        <span class="font-display font-extrabold text-lg tracking-tight text-white -mt-0.5">SOLAR</span>
+                        <span class="font-display font-bold text-[10px] tracking-[0.14em] text-brand-gold mt-1">DEVELOPMENT LLC</span>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-500 mt-3 max-w-sm">
+                    Commercial &amp; Industrial Distributed Generation Infrastructure.
+                </p>
+            </div>
+
+            <!-- Footer Contact & Copyright -->
+            <div class="text-xs text-slate-400 md:text-right space-y-2">
+                <p>
+                    <span class="text-slate-500 uppercase tracking-wider mr-2">Inquiries:</span>
+                    <a href="mailto:contact@americansolardevelopment.com" class="text-white hover:text-brand-gold transition-colors font-medium">contact@americansolardevelopment.com</a>
+                </p>
+                <p class="text-slate-500">
+                    &copy; <span id="year">2026</span> American Solar Development LLC. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
